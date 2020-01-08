@@ -1,0 +1,23 @@
+.hidden {
+  display: none;
+}
+#logo {
+  display: block;
+  margin: 4rem;
+}
+#sidebar {
+  padding: 0 1rem;
+}
+#sidebar .menu {
+  width: auto;
+}
+#sidebar a.item {
+  font-size: 1.2rem;
+  text-align: center;
+}
+#container {
+  margin-top: 50px;
+}
+#container h2 {
+  margin-bottom: 50px;
+}

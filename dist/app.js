@@ -1,0 +1,1 @@
+"use strict";$(document).ready(function(){$("#top_right, #top_left, #bottom_left, #bottom_right").hover(function(){var t=$(this).find("video")[0];t.play&&t.play()}),$("#top_right, #top_left, #bottom_left, #bottom_right").mouseleave(function(){var t=$(this).find("video")[0];t.pause&&t.pause()})});
