@@ -8,40 +8,65 @@ block append title
 
 block append page
   h2 Projects
-  .ui.very.relaxed.grid
-    .row
+  .ui.very.relaxed.stackable.grid
+    .row#kamigen
       .column.three.wide
         img.ui.image.fluid(src='/assets/project-logos/kamigen.png')
       .column.six.wide
         h3 Kamigen
+        p Our flagship game and media project, aimed to advance understanding and capabilities with games and other high performance software.
         p.
-          An independent game studio that
-          uses open source and web technology
-          to deliver cutting edge experiences
-          for gamers and developers.
+          Kamigen is a tropical cyberpunk (science fiction) world with aircraft combat.
+          Drop into the pilot seat and join the struggle or read the story in the comics.
+        .ui.secondary.menu
+          a.item(href='https://kamigen.com/')
+            i.desktop.icon
+            | Visit Website
+          a.item(href='https://www.facebook.com/kamigengame/')
+            i.facebook.icon
+            | Facebook page
+          a.item(href='https://github.com/paulbrzeski/kamigen')
+            i.github.icon
+            | Github repository
       .column.seven.wide
         img.ui.image.fluid(src='/assets/project-screenshots/kamigen.png')
-    .row
+    .row#kettlefish
       .column.three.wide
         img.ui.image.fluid(src='/assets/project-logos/kettlefish.png')
       .column.six.wide
         h3 Kettlefish
+        p Templates and tools for efficiently building websites and software with components tested through Kamigen and Manifold
         p.
-          An independent game studio that
-          uses open source and web technology
-          to deliver cutting edge experiences
-          for gamers and developers.
+          An opinionated boilerplate to create static websites.
+          Out of the box Kettlefish comes with a default homepage
+          built using a Semantic UI layout example, allowing anyone
+          who knows what these tools are to hit the ground running.
+        .ui.secondary.menu
+          a.item(href='https://www.npmjs.com/package/kettlefish')
+            i.npm.icon
+            | NPM
+          a.item(href='https://github.com/paulbrzeski/kettlefish')
+            i.github.icon
+            | Github repository
       .column.seven.wide
         img.ui.image.fluid(src='/assets/project-screenshots/kettlefish.png')
-    .row
+    .row#manifold
       .column.three.wide
         img.ui.image.fluid(src='/assets/project-logos/manifold.png')
       .column.six.wide
         h3 Manifold
+        p Our flagship software application, aimed to advance understanding and capabilities with digital media production and publishing
         p.
-          An independent game studio that
-          uses open source and web technology
-          to deliver cutting edge experiences
-          for gamers and developers.
+          A hybrid 2D/3D design tool, this is an experimental program
+          to address the need for fast and efficient modelling for
+          Three.JS scenes. The 2D vector component can also be used 
+          for general illustration and design needs.
+        .ui.secondary.menu
+          a.item(href='http://manifold.paulbrzeski.com/')
+            i.desktop.icon
+            | Demo
+          a.item(href='https://github.com/paulbrzeski/manifold')
+            i.github.icon
+            | Github repository
       .column.seven.wide
         img.ui.image.fluid(src='/assets/project-screenshots/manifold.png')
