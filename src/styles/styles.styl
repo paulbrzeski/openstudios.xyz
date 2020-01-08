@@ -1,0 +1,81 @@
+.hidden
+  display: none
+
+#logo
+  padding: 2rem
+
+#top_right, #top_left, #bottom_left, #bottom_right
+  background: rgba(0,0,0,0.85)
+  width: 300px;
+  height: 300px;
+  margin: 100px;
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  overflow: hidden;
+  cursor: pointer;
+  position: absolute;
+
+#top_right video, #top_left video, #bottom_left video, #bottom_right video,
+#top_right .overlay, #top_left .overlay, #bottom_left .overlay, #bottom_right .overlay
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  text-align: center;
+
+#top_right video, #top_left video, #bottom_left video, #bottom_right video
+  width: 475px;
+  height: 475px;
+  margin: -90px -75px -75px
+  position: absolute
+  z-index: 0
+  filter: brightness(30%)
+  transition: all 0.25s ease-out;
+
+#top_right:hover video,
+#top_left:hover video,
+#bottom_left:hover video,
+#bottom_right:hover video
+  filter: brightness(60%)
+
+#top_right .overlay, #top_left .overlay, #bottom_left .overlay, #bottom_right .overlay
+  color: #FFFFFF
+  margin: 95px auto
+  max-width: 80%
+  z-index: 1
+
+#top_right
+  left: 450px
+
+#top_left
+  left: 115px
+  top: 115px
+
+#bottom_left
+  left: 0px
+  top: 450px
+
+#bottom_right
+  top: 340px
+  left: 340px
+
+#sidebar
+  padding 0 1rem
+
+  a.item
+    font-size: 1.2rem;
+    text-align: center
+
+#container
+  margin-left: 450px
+
+@media only screen and (max-width: 1600px)
+  #container
+    margin-left: 150px
+
+@media only screen and (max-width: 1200px)
+  #top_right, #top_left, #bottom_left, #bottom_right
+    margin: 150px auto
+    position: relative
+    left: auto
+    top: auto

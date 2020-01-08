@@ -1,0 +1,47 @@
+extends /src/templates/layout.pug
+
+block append scripts
+  script(src='./dist/app.js')
+
+block append title
+  | Home | Open Studios
+
+block append page
+  #bottom_left
+    .overlay
+      h3 Welcome to Open Studios!
+      p.
+        An independent game studio that
+        uses open source and web technology
+        to deliver cutting edge experiences
+        for gamers and developers.
+  #top_left
+    video(width='400' height='400')
+      source(src='/assets/kamigen.mp4' type='video/mp4' loop='true')
+    .overlay
+      h3 Kamigen
+      p.
+        Duis quis ligula at mauris porttitor
+        interdum. Vivamus lacinia ac velit ut 
+        sagittis. Sed velit massa, aliquam 
+        vitae varius ac, posuere a nulla.
+  #top_right
+    video(width='400' height='400')
+      source(src='/assets/kettlefish.mp4' type='video/mp4' loop='true')
+    .overlay
+      h3 Kettlefish
+      p.
+        Duis quis ligula at mauris porttitor
+        interdum. Vivamus lacinia ac velit ut 
+        sagittis. Sed velit massa, aliquam 
+        vitae varius ac, posuere a nulla.
+  #bottom_right
+    video(width='400' height='400')
+      source(src='/assets/manifold.mp4' type='video/mp4' loop='true')
+    .overlay
+      h3 Manifold
+      p.
+        Duis quis ligula at mauris porttitor
+        interdum. Vivamus lacinia ac velit ut 
+        sagittis. Sed velit massa, aliquam 
+        vitae varius ac, posuere a nulla.
