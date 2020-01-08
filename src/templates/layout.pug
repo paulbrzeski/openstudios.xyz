@@ -5,11 +5,12 @@ html
       block title
     link(href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css', rel='stylesheet')
     link(href='./dist/styles.css', rel='stylesheet')
+    block styles
   body
     .ui.grid.stackable
       .row
         .column.three.wide
           include /src/templates/sidebar.pug
-        #container.column
+        #container.column.thirteen.wide
           block page
     include /src/templates/scripts.pug
