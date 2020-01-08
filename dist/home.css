@@ -97,4 +97,10 @@
     left: auto;
     top: auto;
   }
+  #top_right video,
+  #top_left video,
+  #bottom_left video,
+  #bottom_right video {
+    filter: brightness(60%);
+  }
 }
