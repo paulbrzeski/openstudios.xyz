@@ -1,9 +1,17 @@
 block vendor_scripts
   script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js')
   script(src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.js')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.js')
 block scripts
 // Global site tag (gtag.js) - Google Analytics
 script(async='' src='https://www.googletagmanager.com/gtag/js?id=UA-155740430-1')
+script#vs(type='not-js').
+  void main() {
+    gl_Position = vec4( position, 1.0 );
+  }
+//- Shader from http://glslsandbox.com/e#59251.0
+script#fs(type='not-js')
+  include shader.fs
 script.
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}

@@ -9,62 +9,64 @@
     <link href="./dist/styles.css" rel="stylesheet">
   </head>
   <body>
-    <div class="ui grid stackable">
-      <div class="row">
-        <div class="column three wide">
-          <div id="sidebar">
-            <h1><a id="logo" href="/" title="Home"><span class="hidden">Home</span><img class="ui image fluid" src="/assets/logo.png"></a>
-              <div class="ui secondary stackable vertical menu"><a class="item" href="/projects.html">Projects</a><a class="item" href="/about.html">About</a><a class="item" href="/press.html">Press</a><a class="item" href="/donate.html"><strong>Donate</strong></a></div>
-            </h1>
-          </div>
-        </div>
-        <div class="column thirteen wide" id="container">
-          <h2>Donate</h2>
-          <div class="ui three column grid stackable">
-            <div class="row">
-              <div class="column">
-                <p>Hello there! I'm <a href="https://paulbrzeski.com">Paul Brzeski</a>, I started this studio as a means to fully realise and produce my game and software projects.</p>
-                <p>
-                  Open Studios has three strategic projects that will optimise the development of websites, applications, services and games.
-                  The projects are interdependent - the Kamigen game relies on Manifold for design software and Kettlefish as a software framework.
-                </p>
-                <p>
-                  Kettlefish needs the game and design software to evolve its features. Manifold is built to the design needs of Kamigen.
-                  Imagine you lived in a world of toys before someone invented Lego. Open Studios wants to make web Lego and give it to the world.
-                </p>
-              </div>
-              <div class="column">
-                <h3>How do we make money?</h3>
-                <p>
-                  At the moment the company is purely donation based while we apply for grants.
-                  Our future revenue will come from non license related sources such as funding grants, merchandise,
-                  subcontracting to extend Open Studios software and paid technical support.
-                  Open Studios needs your support  in order to fund development and achieve a high standard of quality.
-                </p>
-              </div>
-              <div class="column"></div>
+    <div id="wrapper">
+      <div class="ui grid stackable">
+        <div class="row">
+          <div class="column three wide">
+            <div id="sidebar">
+              <h1><a id="logo" href="/" title="Home"><span class="hidden">Home</span><img class="ui image fluid" src="/assets/logo.png"></a>
+                <div class="ui secondary stackable vertical menu"><a class="item" href="/projects.html">Projects</a><a class="item" href="/about.html">About</a><a class="item" href="/press.html">Press</a><a class="item" href="/donate.html"><strong>Donate</strong></a></div>
+              </h1>
             </div>
-            <div class="row">
-              <div class="column">
-                <h3>Support Open Studios</h3>
-                <p>While donations are critically needed, there are other ways we could use your help!</p>
-                <div class="ui bulleted list">
-                  <div class="item">Like the <a href="https://www.facebook.com/kamigengame/">Kamigen page on Facebook</a></div>
-                  <div class="item">Leave some feedback about the <a href="https://www.deviantart.com/thezeski/gallery/70776399/kamigen-comics">Kamigen comic on DeviantArt</a></div>
-                  <div class="item">Try out <a href="https://www.npmjs.com/package/kettlefish">Kettlefish</a> to create a website, UI or generate HTML for any purpose</div>
-                  <div class="item">Review and suggest improvements to the code on Github
-                    <div class="list"><a class="item" href="https://github.com/paulbrzeski/kamigen">Kamigen</a><a class="item" href="https://github.com/paulbrzeski/kettlefish">Kettlefish</a><a class="item" href="https://github.com/paulbrzeski/manifold">Manifold</a></div>
+          </div>
+          <div class="column thirteen wide" id="container">
+            <h2>Donate</h2>
+            <div class="ui three column grid stackable">
+              <div class="row">
+                <div class="column">
+                  <p>Hello there! I'm <a href="https://paulbrzeski.com">Paul Brzeski</a>, I started this studio as a means to fully realise and produce my game and software projects.</p>
+                  <p>
+                    Open Studios has three strategic projects that will optimise the development of websites, applications, services and games.
+                    The projects are interdependent - the Kamigen game relies on Manifold for design software and Kettlefish as a software framework.
+                  </p>
+                  <p>
+                    Kettlefish needs the game and design software to evolve its features. Manifold is built to the design needs of Kamigen.
+                    Imagine you lived in a world of toys before someone invented Lego. Open Studios wants to make web Lego and give it to the world.
+                  </p>
+                </div>
+                <div class="column">
+                  <h3>How do we make money?</h3>
+                  <p>
+                    At the moment the company is purely donation based while we apply for grants.
+                    Our future revenue will come from non license related sources such as funding grants, merchandise,
+                    subcontracting to extend Open Studios software and paid technical support.
+                    Open Studios needs your support  in order to fund development and achieve a high standard of quality.
+                  </p>
+                </div>
+                <div class="column"></div>
+              </div>
+              <div class="row">
+                <div class="column">
+                  <h3>Support Open Studios</h3>
+                  <p>While donations are critically needed, there are other ways we could use your help!</p>
+                  <div class="ui bulleted list">
+                    <div class="item">Like the <a href="https://www.facebook.com/kamigengame/">Kamigen page on Facebook</a></div>
+                    <div class="item">Leave some feedback about the <a href="https://www.deviantart.com/thezeski/gallery/70776399/kamigen-comics">Kamigen comic on DeviantArt</a></div>
+                    <div class="item">Try out <a href="https://www.npmjs.com/package/kettlefish">Kettlefish</a> to create a website, UI or generate HTML for any purpose</div>
+                    <div class="item">Review and suggest improvements to the code on Github
+                      <div class="list"><a class="item" href="https://github.com/paulbrzeski/kamigen">Kamigen</a><a class="item" href="https://github.com/paulbrzeski/kettlefish">Kettlefish</a><a class="item" href="https://github.com/paulbrzeski/manifold">Manifold</a></div>
+                    </div>
                   </div>
                 </div>
+                <div class="column">
+                  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="ZW8UNY5ZX65PJ">
+                    <input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"><img alt="" border="0" src="https://www.paypal.com/en_AU/i/scr/pixel.gif" width="1" height="1">
+                  </form>
+                </div>
+                <div class="column"></div>
               </div>
-              <div class="column">
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                  <input type="hidden" name="cmd" value="_s-xclick">
-                  <input type="hidden" name="hosted_button_id" value="ZW8UNY5ZX65PJ">
-                  <input type="image" src="https://www.paypalobjects.com/en_AU/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"><img alt="" border="0" src="https://www.paypal.com/en_AU/i/scr/pixel.gif" width="1" height="1">
-                </form>
-              </div>
-              <div class="column"></div>
             </div>
           </div>
         </div>
@@ -72,9 +74,38 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.js"></script>
     <script src="./dist/app.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics-->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-155740430-1"></script>
+    <script id="vs" type="not-js">
+      void main() {
+        gl_Position = vec4( position, 1.0 );
+      }
+    </script>
+    <script id="fs" type="not-js">#ifdef GL_ES
+precision mediump float;
+#endif
+
+#extension GL_OES_standard_derivatives : enable
+
+uniform float time;
+uniform vec2 resolution;
+
+void main() {
+    vec2 p = gl_FragCoord.xy / resolution.y;
+    vec3 col;
+    for(float j = 0.0; j < 3.0; j++){
+        for(float i = 1.0; i < 10.0; i++){
+            p.x += 0.1 / (i + j) * sin(i * 5.0 * p.y + time + cos((time / (6. * i)) * i + j));
+            p.y += 0.1 / (i + j)* cos(i * 5.0 * p.x + time + sin((time / (6. * i)) * i + j));
+        }
+        col[int(j)] = abs(p.x + p.y);
+    }
+    gl_FragColor = vec4(col, 1.);
+}
+
+    </script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}

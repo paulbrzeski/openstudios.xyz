@@ -9,10 +9,11 @@ html
     link(href='./dist/styles.css', rel='stylesheet')
     block styles
   body
-    .ui.grid.stackable
-      .row
-        .column.three.wide
-          include /src/templates/sidebar.pug
-        #container.column.thirteen.wide
-          block page
+    #wrapper
+      .ui.grid.stackable
+        .row
+          .column.three.wide
+            include /src/templates/sidebar.pug
+          #container.column.thirteen.wide
+            block page
     include /src/templates/scripts.pug

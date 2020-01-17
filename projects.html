@@ -7,62 +7,65 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
     <link href="./dist/styles.css" rel="stylesheet">
+    <link href="./dist/projects.css" rel="stylesheet">
   </head>
   <body>
-    <div class="ui grid stackable">
-      <div class="row">
-        <div class="column three wide">
-          <div id="sidebar">
-            <h1><a id="logo" href="/" title="Home"><span class="hidden">Home</span><img class="ui image fluid" src="/assets/logo.png"></a>
-              <div class="ui secondary stackable vertical menu"><a class="item" href="/projects.html">Projects</a><a class="item" href="/about.html">About</a><a class="item" href="/press.html">Press</a><a class="item" href="/donate.html"><strong>Donate</strong></a></div>
-            </h1>
+    <div id="wrapper">
+      <div class="ui grid stackable">
+        <div class="row">
+          <div class="column three wide">
+            <div id="sidebar">
+              <h1><a id="logo" href="/" title="Home"><span class="hidden">Home</span><img class="ui image fluid" src="/assets/logo.png"></a>
+                <div class="ui secondary stackable vertical menu"><a class="item" href="/projects.html">Projects</a><a class="item" href="/about.html">About</a><a class="item" href="/press.html">Press</a><a class="item" href="/donate.html"><strong>Donate</strong></a></div>
+              </h1>
+            </div>
           </div>
-        </div>
-        <div class="column thirteen wide" id="container">
-          <h2>Projects</h2>
-          <div class="ui very relaxed stackable grid">
-            <div class="row" id="kamigen">
-              <div class="column three wide"><img class="ui image fluid" src="/assets/project-logos/kamigen.png"></div>
-              <div class="column six wide">
-                <h3>Kamigen</h3>
-                <p>Our flagship game and media project, aimed to advance understanding and capabilities with games and other high performance software.</p>
-                <p>
-                  Kamigen is a tropical cyberpunk (science fiction) world with aircraft combat.
-                  Drop into the pilot seat and join the struggle or read the story in the comics.
-                </p>
-                <div class="ui secondary menu"><a class="item" href="https://kamigen.com/"><i class="desktop icon"></i>Visit Website</a><a class="item" href="https://www.facebook.com/kamigengame/"><i class="facebook icon"></i>Facebook page</a><a class="item" href="https://github.com/paulbrzeski/kamigen"><i class="github icon"></i>Github repository</a></div>
+          <div class="column thirteen wide" id="container">
+            <h2>Projects</h2>
+            <div class="ui very relaxed stackable grid">
+              <div class="row" id="kamigen">
+                <div class="column three wide"><img class="ui image fluid logo" src="/assets/project-logos/kamigen.png"></div>
+                <div class="column six wide">
+                  <h3>Kamigen</h3>
+                  <p>Our flagship game and media project, aimed to advance understanding and capabilities with games and other high performance software.</p>
+                  <p>
+                    Kamigen is a tropical cyberpunk (science fiction) world with aircraft combat.
+                    Drop into the pilot seat and join the struggle or read the story in the comics.
+                  </p>
+                  <div class="ui secondary menu"><a class="item" href="https://kamigen.com/"><i class="desktop icon"></i>Visit Website</a><a class="item" href="https://www.facebook.com/kamigengame/"><i class="facebook icon"></i>Facebook page</a><a class="item" href="https://github.com/paulbrzeski/kamigen"><i class="github icon"></i>Github repository</a></div>
+                </div>
+                <div class="column seven wide"><img class="ui image fluid" src="/assets/project-screenshots/kamigen.png"></div>
               </div>
-              <div class="column seven wide"><img class="ui image fluid" src="/assets/project-screenshots/kamigen.png"></div>
-            </div>
-            <div class="row" id="kettlefish">
-              <div class="column three wide"><img class="ui image fluid" src="/assets/project-logos/kettlefish.png"></div>
-              <div class="column six wide">
-                <h3>Kettlefish</h3>
-                <p>Templates and tools for efficiently building websites and software with components tested through Kamigen and Manifold</p>
-                <p>
-                  An opinionated boilerplate to create static websites.
-                  Out of the box Kettlefish comes with a default homepage
-                  built using a Semantic UI layout example, allowing anyone
-                  who knows what these tools are to hit the ground running.
-                </p>
-                <div class="ui secondary menu"><a class="item" href="https://www.npmjs.com/package/kettlefish"><i class="npm icon"></i>NPM</a><a class="item" href="https://github.com/paulbrzeski/kettlefish"><i class="github icon"></i>Github repository</a></div>
+              <div class="row" id="kettlefish">
+                <div class="column three wide"><img class="ui image fluid logo" src="/assets/project-logos/kettlefish.png"></div>
+                <div class="column six wide">
+                  <h3>Kettlefish</h3>
+                  <p>Templates and tools for efficiently building websites and software with components tested through Kamigen and Manifold</p>
+                  <p>
+                    An opinionated boilerplate to create static websites.
+                    Out of the box Kettlefish comes with a default homepage
+                    built using a Semantic UI layout example, allowing anyone
+                    who knows what these tools are to hit the ground running.
+                  </p>
+                  <div class="ui secondary menu"><a class="item" href="https://www.npmjs.com/package/kettlefish"><i class="npm icon"></i>NPM</a><a class="item" href="https://github.com/paulbrzeski/kettlefish"><i class="github icon"></i>Github repository</a></div>
+                </div>
+                <div class="column seven wide"><img class="ui image fluid" src="/assets/project-screenshots/kettlefish.png"></div>
               </div>
-              <div class="column seven wide"><img class="ui image fluid" src="/assets/project-screenshots/kettlefish.png"></div>
-            </div>
-            <div class="row" id="manifold">
-              <div class="column three wide"><img class="ui image fluid" src="/assets/project-logos/manifold.png"></div>
-              <div class="column six wide">
-                <h3>Manifold</h3>
-                <p>Our flagship software application, aimed to advance understanding and capabilities with digital media production and publishing</p>
-                <p>
-                  A hybrid 2D/3D design tool, this is an experimental program
-                  to address the need for fast and efficient modelling for
-                  Three.JS scenes. The 2D vector component can also be used 
-                  for general illustration and design needs.
-                </p>
-                <div class="ui secondary menu"><a class="item" href="http://manifold.paulbrzeski.com/"><i class="desktop icon"></i>Demo</a><a class="item" href="https://github.com/paulbrzeski/manifold"><i class="github icon"></i>Github repository</a></div>
+              <div class="row" id="manifold">
+                <div class="column three wide"><img class="ui image fluid logo" src="/assets/project-logos/manifold.png"></div>
+                <div class="column six wide">
+                  <h3>Manifold</h3>
+                  <p>Our flagship software application, aimed to advance understanding and capabilities with digital media production and publishing</p>
+                  <p>
+                    A hybrid 2D/3D design tool, this is an experimental program
+                    to address the need for fast and efficient modelling for
+                    Three.JS scenes. The 2D vector component can also be used 
+                    for general illustration and design needs.
+                  </p>
+                  <div class="ui secondary menu"><a class="item" href="http://manifold.paulbrzeski.com/"><i class="desktop icon"></i>Demo</a><a class="item" href="https://github.com/paulbrzeski/manifold"><i class="github icon"></i>Github repository</a></div>
+                </div>
+                <div class="column seven wide"><img class="ui image fluid" src="/assets/project-screenshots/manifold.png"></div>
               </div>
-              <div class="column seven wide"><img class="ui image fluid" src="/assets/project-screenshots/manifold.png"></div>
             </div>
           </div>
         </div>
@@ -70,9 +73,38 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.js"></script>
     <script src="./dist/app.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics-->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-155740430-1"></script>
+    <script id="vs" type="not-js">
+      void main() {
+        gl_Position = vec4( position, 1.0 );
+      }
+    </script>
+    <script id="fs" type="not-js">#ifdef GL_ES
+precision mediump float;
+#endif
+
+#extension GL_OES_standard_derivatives : enable
+
+uniform float time;
+uniform vec2 resolution;
+
+void main() {
+    vec2 p = gl_FragCoord.xy / resolution.y;
+    vec3 col;
+    for(float j = 0.0; j < 3.0; j++){
+        for(float i = 1.0; i < 10.0; i++){
+            p.x += 0.1 / (i + j) * sin(i * 5.0 * p.y + time + cos((time / (6. * i)) * i + j));
+            p.y += 0.1 / (i + j)* cos(i * 5.0 * p.x + time + sin((time / (6. * i)) * i + j));
+        }
+        col[int(j)] = abs(p.x + p.y);
+    }
+    gl_FragColor = vec4(col, 1.);
+}
+
+    </script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}

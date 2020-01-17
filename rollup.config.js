@@ -8,7 +8,6 @@ export default {
   	format: 'cjs'
   },
   plugins: [
-    buble(),
-    uglify()
+    buble()
   ]
 };

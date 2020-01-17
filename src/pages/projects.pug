@@ -6,12 +6,15 @@ block append scripts
 block append title
   | Projects | Open Studios
 
+block append styles
+  link(href='./dist/projects.css', rel='stylesheet')
+
 block append page
   h2 Projects
   .ui.very.relaxed.stackable.grid
     .row#kamigen
       .column.three.wide
-        img.ui.image.fluid(src='/assets/project-logos/kamigen.png')
+        img.ui.image.fluid.logo(src='/assets/project-logos/kamigen.png')
       .column.six.wide
         h3 Kamigen
         p Our flagship game and media project, aimed to advance understanding and capabilities with games and other high performance software.
@@ -32,7 +35,7 @@ block append page
         img.ui.image.fluid(src='/assets/project-screenshots/kamigen.png')
     .row#kettlefish
       .column.three.wide
-        img.ui.image.fluid(src='/assets/project-logos/kettlefish.png')
+        img.ui.image.fluid.logo(src='/assets/project-logos/kettlefish.png')
       .column.six.wide
         h3 Kettlefish
         p Templates and tools for efficiently building websites and software with components tested through Kamigen and Manifold
@@ -52,7 +55,7 @@ block append page
         img.ui.image.fluid(src='/assets/project-screenshots/kettlefish.png')
     .row#manifold
       .column.three.wide
-        img.ui.image.fluid(src='/assets/project-logos/manifold.png')
+        img.ui.image.fluid.logo(src='/assets/project-logos/manifold.png')
       .column.six.wide
         h3 Manifold
         p Our flagship software application, aimed to advance understanding and capabilities with digital media production and publishing
