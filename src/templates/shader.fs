@@ -18,4 +18,6 @@ void main() {
         col[int(j)] = abs(p.x + p.y);
     }
     gl_FragColor = vec4(col, 1.);
+    gl_FragColor *= 0.5;
+    gl_FragColor += vec4(0.5);
 }
