@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Planning for Code Continuity Across a Company | Press | Open Studios
+    </title>
+    <base href="/">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
+    <link href="./dist/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="ui grid stackable">
+        <div class="row">
+          <div class="column three wide">
+            <div id="sidebar">
+              <h1><a id="logo" href="/" title="Home"><span class="hidden">Home</span><img class="ui image fluid" src="/assets/logo.png"></a>
+                <div class="ui secondary stackable vertical menu"><a class="item" href="/projects.html">Projects</a><a class="item" href="/about.html">About</a><a class="item" href="/press.html">Press</a><a class="item" href="/donate.html"><strong>Donate</strong></a></div>
+              </h1>
+            </div>
+          </div>
+          <div class="column thirteen wide" id="container">
+            <h2>Planning for Code Continuity Across a Company</h2>
+            <p><strong>by Paul Brzeski</strong></p>
+            <p><em>16th of March 2020</em></p>
+            <div class="ui stackable two column grid">
+              <div class="row">
+                <div class="column">
+                  <p>Open Studios is currently a one man operation which presents a challenge to how work is done. I've built dozens of websites in Content Management Systems over the years and so my first decision was to avoid one. Maintaining the Kamigen and Open Studios websites with a CMS would have introduced countless problems including man-hour overheads as well as security, performance and architecture concerns. Those websites are instead built with Kettlefish, a custom static website generator that makes prototyping complex front-ends really easy (largely thanks to of Pug.JS and Semantic UI).</p>
+                  <p>Having also built and maintained a lot of software over the years - I was keen to avoid decisions that would require a lot of man hours to carry out. Manifold originally used Backbone and Underscore in order to accelerate development, in theory at least. As a bespoke, prototype driven project Manifold was challenging to write in an MVC context, much of the time generating redundant classes and spreading integrations and features across multiple folders instead of keeping them together.</p>
+                  <p>Currently the most popular front-end application frameworks are Angular, React and Vue.js - all require a significant amount of engineering work to implement, with little foreseeable benefit, so there is no plan to implement these frameworks for now. Not only has it been challenging to remove Backbone and Underscore from Manifold's architecture, features within modern Javascript such as modules and tree-shaking/bundling tools are all I need to implement complex and scaleable software architecture. </p>
+                  <p>Setting up services, databases, servers and other supplementary infrastructure is expensive on resources. It's trivial to spin up another feature or repository to power a server application but Open Studios simply does not require one at this point in time. All Open Studios websites and software are built on a decoupled frontend approach; generated from templates using Kettlefish with any server integrations being done purely at the JS application level. This approach ensures front-ends are nigh untouchable when it comes to optimal performance, security and maintenance; because the front-end and back-end concerns are separate, interrelated issues don't have to be solved together. In future, the development script within Kettlefish that watches for file changes, serves HTTP and generates new HTML/CSS/JS could easily be tweaked to act as a standalone web server.</p>
+                </div>
+                <div class="column"><img class="ui image medium" src="/assets/kamigenconcept.png"><em>Concept art of the Kamigen UI on mobile</em></div>
+              </div>
+              <div class="row">
+                <div class="column">
+                  <p>Both Kamigen and Manifold are currently blocked in development by code architecture problems. Kamigen needs to be refactored to use the most recent patterns implemented in Langenium, currently it's still just one giant script file which makes it hard to extend and maintain. Manifold has a bit of MVC cruft left over, the new architecture that is emerging is incomplete and refactoring is yet to begin at the Pug template level. The Manifold UI certainly has some ways to go as well if it is to compete with the likes of Adobe Illustrator, Blender and Sketch.</p>
+                  <p>As Kamigen is already complex, I have dusted off a smaller game idea to refactor first. I am currently working on building up Rover, an arcade style cycling game. Once Rover is at a playable stage (pictured right), I will transfer the architectural learnings to Kamigen and potentially others projects including Manifold and hopefully Kettlefish (if something useful to all Kettlefish based projects is discovered). This integrative approach to software architecture has required patience and careful planning, but it has already been paying dividends for years. My websites are hosted on Github Pages for free and their lightweight nature allows me to focus on the users, putting additional time into the final testing and polishing stages facilitates higher quality results.</p>
+                </div>
+                <div class="column"><img class="ui image medium" src="/assets/roverconcept.png"><em>Concept art of the Rover UI and gameplay</em></div>
+              </div>
+              <div class="row">
+                <div class="column">
+                  <div class="ui stackable two column grid">
+                    <div class="row">
+                      <div class="column">
+                        <h3>Related Open Studios links</h3>
+                        <ul>
+                          <li><a href="https://kamigen.com">Kamigen website</a></li>
+                          <li><a href="https://www.npmjs.com/package/kettlefish">Kettlefish on NPM</a></li>
+                          <li><a href="https://paulbrzeski.com/case-studies/langenium.html">Langenium case study</a></li>
+                          <li><a href="https://github.com/paulbrzeski/manifold">Manifold repository on Github</a></li>
+                        </ul>
+                      </div>
+                      <div class="column">
+                        <h3>External links</h3>
+                        <ul>
+                          <li><a href="https://backbonejs.org/">Backbone.JS</a></li>
+                          <li><a href="https://pugjs.org/">Pug.JS</a></li>
+                          <li><a href="https://semantic-ui.com/">Semantic UI</a></li>
+                          <li><a href="https://underscorejs.org/">Underscore</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.js"></script>
+    <script src="./dist/app.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics-->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-155740430-1"></script>
+    <script id="vs" type="not-js">
+      void main() {
+        gl_Position = vec4( position, 1.0 );
+      }
+    </script>
+    <script id="fs" type="not-js">#ifdef GL_ES
+precision mediump float;
+#endif
+
+#extension GL_OES_standard_derivatives : enable
+
+uniform float time;
+uniform vec2 resolution;
+
+void main() {
+    vec2 p = gl_FragCoord.xy / resolution.y;
+    vec3 col;
+    for(float j = 0.0; j < 3.0; j++){
+        for(float i = 1.0; i < 10.0; i++){
+            p.x += 0.1 / (i + j) * sin(i * 5.0 * p.y + time + cos((time / (6. * i)) * i + j));
+            p.y += 0.1 / (i + j)* cos(i * 5.0 * p.x + time + sin((time / (6. * i)) * i + j));
+        }
+        col[int(j)] = abs(p.x + p.y);
+    }
+    gl_FragColor = vec4(col, 1.);
+    gl_FragColor *= 0.5;
+    gl_FragColor += vec4(0.5);
+}
+
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-155740430-1');
+    </script>
+  </body>
+</html>

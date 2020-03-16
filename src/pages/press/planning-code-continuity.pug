@@ -1,0 +1,65 @@
+extends /src/templates/layout.pug
+
+block append scripts
+  script(src='./dist/app.js')
+
+block append title
+  | Planning for Code Continuity Across a Company | Press | Open Studios
+
+block append page
+  h2 Planning for Code Continuity Across a Company
+  p
+    strong by Paul Brzeski
+  p
+    em 16th of March 2020
+
+  .ui.stackable.two.column.grid
+    .row
+      .column
+        p.
+          Open Studios is currently a one man operation which presents a challenge to how work is done. I've built dozens of websites in Content Management Systems over the years and so my first decision was to avoid one. Maintaining the Kamigen and Open Studios websites with a CMS would have introduced countless problems including man-hour overheads as well as security, performance and architecture concerns. Those websites are instead built with Kettlefish, a custom static website generator that makes prototyping complex front-ends really easy (largely thanks to of Pug.JS and Semantic UI).
+        p.
+          Having also built and maintained a lot of software over the years - I was keen to avoid decisions that would require a lot of man hours to carry out. Manifold originally used Backbone and Underscore in order to accelerate development, in theory at least. As a bespoke, prototype driven project Manifold was challenging to write in an MVC context, much of the time generating redundant classes and spreading integrations and features across multiple folders instead of keeping them together.
+        p.
+          Currently the most popular front-end application frameworks are Angular, React and Vue.js - all require a significant amount of engineering work to implement, with little foreseeable benefit, so there is no plan to implement these frameworks for now. Not only has it been challenging to remove Backbone and Underscore from Manifold's architecture, features within modern Javascript such as modules and tree-shaking/bundling tools are all I need to implement complex and scaleable software architecture. 
+        p.
+          Setting up services, databases, servers and other supplementary infrastructure is expensive on resources. It's trivial to spin up another feature or repository to power a server application but Open Studios simply does not require one at this point in time. All Open Studios websites and software are built on a decoupled frontend approach; generated from templates using Kettlefish with any server integrations being done purely at the JS application level. This approach ensures front-ends are nigh untouchable when it comes to optimal performance, security and maintenance; because the front-end and back-end concerns are separate, interrelated issues don't have to be solved together. In future, the development script within Kettlefish that watches for file changes, serves HTTP and generates new HTML/CSS/JS could easily be tweaked to act as a standalone web server.
+      .column
+        img.ui.image.medium(src='/assets/kamigenconcept.png')
+        em Concept art of the Kamigen UI on mobile
+    .row
+      .column
+        p.
+          Both Kamigen and Manifold are currently blocked in development by code architecture problems. Kamigen needs to be refactored to use the most recent patterns implemented in Langenium, currently it's still just one giant script file which makes it hard to extend and maintain. Manifold has a bit of MVC cruft left over, the new architecture that is emerging is incomplete and refactoring is yet to begin at the Pug template level. The Manifold UI certainly has some ways to go as well if it is to compete with the likes of Adobe Illustrator, Blender and Sketch.
+        p.
+          As Kamigen is already complex, I have dusted off a smaller game idea to refactor first. I am currently working on building up Rover, an arcade style cycling game. Once Rover is at a playable stage (pictured right), I will transfer the architectural learnings to Kamigen and potentially others projects including Manifold and hopefully Kettlefish (if something useful to all Kettlefish based projects is discovered). This integrative approach to software architecture has required patience and careful planning, but it has already been paying dividends for years. My websites are hosted on Github Pages for free and their lightweight nature allows me to focus on the users, putting additional time into the final testing and polishing stages facilitates higher quality results.
+      .column
+        img.ui.image.medium(src='/assets/roverconcept.png')
+        em Concept art of the Rover UI and gameplay
+    .row
+      .column
+        .ui.stackable.two.column.grid
+          .row
+            .column
+              h3 Related Open Studios links
+              ul
+                li
+                  a(href='https://kamigen.com') Kamigen website
+                li
+                  a(href='https://www.npmjs.com/package/kettlefish') Kettlefish on NPM
+                li
+                  a(href='https://paulbrzeski.com/case-studies/langenium.html') Langenium case study
+                li
+                  a(href='https://github.com/paulbrzeski/manifold') Manifold repository on Github
+            .column
+              h3 External links
+              ul
+                li
+                  a(href='https://backbonejs.org/') Backbone.JS
+                li
+                  a(href='https://pugjs.org/') Pug.JS
+                li
+                  a(href='https://semantic-ui.com/') Semantic UI
+                li
+                  a(href='https://underscorejs.org/') Underscore
+      .column
