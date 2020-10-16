@@ -52,8 +52,8 @@ $(document)
       var height = canvas.clientHeight * dpr;
       if (width != canvas.width || height != canvas.height) {
         renderer.setSize( width, height, false );
-        uniforms.resolution.value.x = renderer.domElement.width;
-        uniforms.resolution.value.y = renderer.domElement.height;
+        uniforms.resolution.value.x = renderer.domElement.width / 4;
+        uniforms.resolution.value.y = renderer.domElement.height / 4;
       }
     }
 
